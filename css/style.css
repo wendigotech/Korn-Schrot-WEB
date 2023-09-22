@@ -1,7 +1,7 @@
 @font-face {
     font-display: swap;
     font-family: 'DynaPuff-Medium';
-    font-style: normal; /* See note below */
+    font-style: normal; 
     font-weight: 500; 
     src: url(../fonts/DynaPuff-Medium.woff2) format('woff2');
   }
@@ -9,7 +9,7 @@
 @font-face {
     font-display: swap;
     font-family: 'DynaPuff-Semibold';
-    font-style: normal; /* See note below */
+    font-style: normal; 
     font-weight: 600; 
     src: url(../fonts/DynaPuff-SemiBold.woff2) format('woff2');
   }
@@ -17,7 +17,7 @@
 @font-face {
     font-display: swap;
     font-family: 'SpaceGrotesk';
-    font-style: normal; /* See note below */
+    font-style: normal; 
     font-weight: 300 700; 
     src: url(../fonts/SpaceGrotesk[wght].woff2) format('woff2');
   }
@@ -67,6 +67,7 @@ section {
 section:nth-child(even) {
   background-image: url(../img/mehl-hintergrund-1024w@1x.webp);
   background-attachment: fixed;
+  background-position: center;
   background-color: var(--Very-Pale-Orange);
   padding: 0rem 0 8rem 0;
 }
