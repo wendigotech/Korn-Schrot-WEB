@@ -3,7 +3,7 @@
 const backToTopBtn = document.getElementById('back-to-top-btn');
 
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 100) {
+    if (window.scrollY > 100) {
         backToTopBtn.style.display = 'block';
     } else {
         backToTopBtn.style.display = 'none';
@@ -17,7 +17,7 @@ backToTopBtn.addEventListener('click', () => {
 // Navbar on scroll animation
 const nav = document.querySelector('nav');
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 100) {
+    if (window.scrollY > 100) {
         nav.style.top = '0';
     } else {
         nav.style.top = '2rem';

@@ -45,16 +45,16 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-image: url(../img/mehl-hintergrund-1024w@1x.webp);
-  background-attachment: fixed;
-  background-position: center;
-  z-index: -2;
 }
 
 main {
   margin: 0 auto;
   max-width: 1024px;
   text-align: center;
+  background-image: url(../img/mehl-hintergrund-1024w@1x.webp);
+  background-attachment: fixed;
+  background-position: center;
+  z-index: -2;
 }
 
 section {
@@ -65,9 +65,10 @@ section {
 }
 
 section:nth-child(even) {
+  background-image: url(../img/mehl-hintergrund-1024w@1x.webp);
+  background-attachment: fixed;
   background-color: var(--Very-Pale-Orange);
   padding: 0rem 0 8rem 0;
-  mix-blend-mode: multiply;
 }
 
 article {
@@ -183,10 +184,20 @@ nav {
   top: -10dvh;
 }
 
+.header-text {
+  position: relative;
+  top: -6dvh;
+}
+
 @media screen and (max-width: 48rem) {
   .header-brand {
     width: 22rem;
     height: 20rem;
+  }
+
+  .header-text {
+    position: relative;
+    top: -1dvh;
   }
 }
 
